@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the workshop paper."
+type: software
+title: "Head2Wrist: Wrist-Camera Robot Policies from Human Head-Camera Demonstrations without a Scene Scan"
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/teamROBI/Head2Wrist"
+authors:
+  - family-names: Kim
+    given-names: Juno
+    affiliation: Seoul National University
+  - family-names: Park
+    given-names: Yesol
+    affiliation: Seoul National University
+  - family-names: Yoon
+    given-names: Hye-Jung
+    affiliation: Seoul National University
+  - family-names: Zhang
+    given-names: Byoung-Tak
+    affiliation: Seoul National University
+preferred-citation:
+  type: conference-paper
+  title: "Head2Wrist: Wrist-Camera Robot Policies from Human Head-Camera Demonstrations without a Scene Scan"
+  authors:
+    - family-names: Kim
+      given-names: Juno
+    - family-names: Park
+      given-names: Yesol
+    - family-names: Yoon
+      given-names: Hye-Jung
+    - family-names: Zhang
+      given-names: Byoung-Tak
+  conference:
+    name: CoRL 2026 Workshop on UMI Arena
+  year: 2026

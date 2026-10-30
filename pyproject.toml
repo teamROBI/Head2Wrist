@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "head2wrist"
+version = "0.1.0"
+description = "Wrist-camera robot policies from human head-camera demonstrations without a scene scan"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "Juno Kim"}, {name = "Yesol Park"}, {name = "Hye-Jung Yoon"}, {name = "Byoung-Tak Zhang"}]
+dependencies = [
+  "numpy==2.4.6", "scipy==1.17.1", "opencv-python==4.11.0.86",
+  "h5py==3.16.0", "trimesh==5.1.0", "open3d==0.20.0", "pin==4.1.0",
+  "pandas==3.0.6", "pyarrow==25.0.1"
+]
+
+[project.optional-dependencies]
+vision = ["torch==2.11.0", "torchvision==0.26.0", "transformers==5.17.0", "simple-lama-inpainting==0.1.2", "Pillow==9.5.0"]
+capture = ["mediapipe"]
+
+[project.urls]
+Repository = "https://github.com/teamROBI/Head2Wrist"
+Project = "https://teamrobi.github.io/projects/head2wrist/"
+
+[project.scripts]
+h2w-generate = "head2wrist.pipeline.run_episode:main"
+h2w-convert-quest = "head2wrist.capture.egokit_to_egodex:main"
+h2w-rescore = "head2wrist.policy.rescore_evals:main"
+h2w-offline-check = "head2wrist.robot.offline_real_check:main"
+
+[tool.setuptools.packages.find]
+include = ["head2wrist*", "baselines*"]
+
+[tool.setuptools.package-data]
+head2wrist = ["assets/*.npy"]
+
+[tool.uv]
+required-version = ">=0.9"
