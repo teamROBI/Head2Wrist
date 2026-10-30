@@ -3,6 +3,7 @@ Head2Wrist: Wrist-Camera Robot Policies from Human Head-Camera Demonstrations wi
 
 [![CoRL 2026 Workshop UMI Arena (poster)](https://img.shields.io/badge/CoRL_2026-UMI_Arena_Poster-00629B)](https://umi-arena.airoa.io/)
 [![Paper](https://img.shields.io/badge/Paper-PDF-b31b1b)](docs/paper.pdf)
+[![OpenReview](https://img.shields.io/badge/OpenReview-Forum-8c1b13)](https://openreview.net/forum?id=VLfG1ekVkL)
 [![Project Page](https://img.shields.io/badge/Project-Page-181717)](https://teamrobi.github.io/projects/head2wrist/)
 [![MIT](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
